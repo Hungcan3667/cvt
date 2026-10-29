@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CVT KEY | Free Fire</title>
+<meta name="theme-color" content="#090909">
+<style>
+:root {
+  --red: #ff2638;
+  --bg: #090909;
+  --panel: #151515;
+  --text: #f5f5f5;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(ellipse at 50% 0%, #671018 0%, transparent 50%),
+    linear-gradient(135deg, #090909, #16090b 55%, #090909);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  border-bottom: 1px solid #ffffff14;
+  background: #080808dc;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  backdrop-filter: blur(12px);
+}
+.logo { font-size: 23px; font-weight: 900; letter-spacing: 2px; }
+.logo span { color: var(--red); }
+nav a {
+  color: #ddd;
+  text-decoration: none;
+  margin-left: 22px;
+  font-size: 14px;
+}
+nav a:hover { color: var(--red); }
+.hero {
+  min-height: 440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 75px 20px;
+}
+.hero-inner { max-width: 760px; animation: enter .8s ease both; }
+.tag {
+  display: inline-block;
+  border: 1px solid #ff263866;
+  background: #ff263814;
+  color: #ff5260;
+  border-radius: 30px;
+  padding: 9px 16px;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+h1 {
+  font-size: clamp(48px, 9vw, 88px);
+  margin: 24px 0 12px;
+  font-weight: 950;
+  letter-spacing: -3px;
+}
+h1 span {
+  color: var(--red);
+  text-shadow: 0 0 35px #ff263855;
+}
+.hero p { color: #aaa; line-height: 1.8; font-size: 16px; }
+.actions {
+  display: flex;
+  gap: 13px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.btn {
+  display: inline-block;
+  padding: 15px 23px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 800;
+  transition: .25s;
+}
+.btn-primary { background: var(--red); color: white; }
+.btn-secondary { border: 1px solid #444; color: white; background: #ffffff08; }
+.btn:hover { transform: translateY(-4px); box-shadow: 0 10px 30px #ff263833; }
+section { padding: 45px 8% 75px; }
+.section-head { text-align: center; margin-bottom: 35px; }
+.section-head h2 { font-size: 30px; margin-bottom: 10px; }
+.section-head p { color: #888; }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+.card {
+  background: linear-gradient(145deg, #191919, #101010);
+  border: 1px solid #ffffff12;
+  border-radius: 15px;
+  padding: 28px 24px;
+  transition: .3s;
+  position: relative;
+  overflow: hidden;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--red);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: .3s;
+}
+.card:hover {
+  transform: translateY(-8px);
+  border-color: #ff263855;
+  box-shadow: 0 18px 45px #0008;
+}
+.card:hover::before { transform: scaleX(1); }
+.card-icon { font-size: 34px; margin-bottom: 20px; }
+.card h3 { font-size: 21px; margin: 0 0 12px; }
+.card p { color: #999; line-height: 1.7; font-size: 14px; min-height: 48px; }
+.card .btn { display: block; text-align: center; margin-top: 22px; }
+.notice {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 20px 24px;
+  border: 1px solid #ff263833;
+  background: #ff26380b;
+  border-radius: 12px;
+  color: #bbb;
+  font-size: 13px;
+  line-height: 1.8;
+}
+.notice strong { color: #ff5967; }
+footer {
+  border-top: 1px solid #ffffff12;
+  text-align: center;
+  padding: 28px 15px;
+  color: #777;
+  font-size: 13px;
+}
+footer b { color: var(--red); }
+@keyframes enter {
+  from { opacity: 0; transform: translateY(22px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 760px) {
+  header { padding: 17px 5%; }
+  nav a { margin-left: 10px; font-size: 12px; }
+  .cards { grid-template-columns: 1fr; max-width: 430px; }
+  section { padding-left: 5%; padding-right: 5%; }
+  .hero { min-height: 400px; }
+  h1 { letter-spacing: -2px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">CVT <span>KEY</span></div>
+  <nav>
+    <a href="#home">Trang chủ</a>
+    <a href="#download">Tải xuống</a>
+  </nav>
+</header>
+
+<main>
+  <div class="hero" id="home">
+    <div class="hero-inner">
+      <div class="tag">FREE FIRE • KEY CENTER</div>
+      <h1>CVT <span>KEY</span></h1>
+      <p>Chào mừng đến với CVT KEY.<br>
+      Truy cập các liên kết bên dưới để tiếp tục.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://link4m.net/ENv3SXKR" target="_blank" rel="noopener noreferrer">NHẬN KEY ↗</a>
+        <a class="btn btn-secondary" href="#download">XEM TẢI XUỐNG ↓</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="download">
+    <div class="section-head">
+      <h2>Trung tâm <span style="color:#ff2638">liên kết</span></h2>
+      <p>Chọn mục bạn muốn truy cập</p>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <div class="card-icon">🔑</div>
+        <h3>Get Key</h3>
+        <p>Mở liên kết để nhận key.</p>
+        <a class="btn btn-primary" href="https://link4m.net/ENv3SXKR" target="_blank" rel="noopener noreferrer">NHẬN KEY ↗</a>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">🤖</div>
+        <h3>Android</h3>
+        <p>Truy cập liên kết dành cho Android.</p>
+        <a class="btn btn-secondary" href="https://link4m.net/W4ckR" target="_blank" rel="noopener noreferrer">MỞ LIÊN KẾT ↗</a>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">📱</div>
+        <h3>iOS</h3>
+        <p>Truy cập liên kết dành cho iOS.</p>
+        <a class="btn btn-secondary" href="https://link4m.org/PRnehNT" target="_blank" rel="noopener noreferrer">MỞ LIÊN KẾT ↗</a>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">⚙️</div>
+        <h3>Admin / Functions</h3>
+        <p>Mở trang quản trị và chức năng.</p>
+        <a class="btn btn-secondary" href="https://locmodpanel.xyz/" target="_blank" rel="noopener noreferrer">TRUY CẬP ↗</a>
+      </article>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="notice">
+      <strong>⚠ Lưu ý:</strong> Hãy kiểm tra nguồn và quyền truy cập trước khi tải hoặc sử dụng tệp từ các liên kết bên ngoài. Trang CVT KEY này chỉ cung cấp các liên kết truy cập.
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2026 <b>CVT KEY</b> · Fan-made landing page
+</footer>
+
+</body>
+</html>
